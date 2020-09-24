@@ -3,8 +3,8 @@ const router = express.Router();
 
 router.get('/', (req,res) => {
     res.send({
-        title: "Some of my favorite movies",
-        date: '23/09/2020'
+        title: "Some interesting cities to visit around the globe and why",
+        date: '24/09/2020'
     })
 });
 

@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 const index = require('./route/index');
-const movies = require('./route/moviesRoute');
+const cities = require('./route/citiesRoute');
 
 app.use((req, res, next) => {
     console.log('Nova requisicao realizada')
@@ -11,6 +11,6 @@ app.use((req, res, next) => {
 });
 
 app.use('/', index);
-app.use('/movies', movies);
+app.use('/cities', cities);
 
 module.exports = app;
